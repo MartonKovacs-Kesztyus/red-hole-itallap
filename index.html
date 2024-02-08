@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Hole Itallap</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Teko:wght@300&display=swap" rel="stylesheet">
+  <script defer src="button.js"></script>
+</head>
+<body>
+  <button onclick="topFunction()" id="toTop" title="Aztakurva">&#128405;</button> 
+  <header>
+    <div class="main-header">
+      <div class="header-logo">
+        <img class="logo" src="images/redhole_logo.png" alt="Red Hole logó">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="drink-links">
+      <div class="grid-sor"><a href="#sor">Sör</a></div>
+      <div class="grid-whiskey"><a href="#whiskey">Whiskey</a></div>
+      <div class="grid-rum"><a href="#rum">Rum</a></div>
+      <div class="grid-cognac"><a href="#cognac">Cognac</a></div>
+      <div class="grid-gin"><a href="#gin">Gin</a></div>
+      <div class="grid-vodka"><a href="#vodka">Vodka</a></div>
+      <div class="grid-metaxa"><a href="#metaxa">Metaxa</a></div>
+      <div class="grid-palinka"><a href="#palinka">Pálinka</a></div>
+      <div class="grid-keseru"><a href="#keseru">Keserű</a></div>
+      <div class="grid-tequila"><a href="#tequila">Tequila</a></div>
+      <div class="grid-likor"><a href="#likor">Likőr</a></div>
+      <div class="grid-bor"><a href="#bor">Bor</a></div>
+      <div class="grid-pezsgo"><a href="#pezsgo">Pezsgő</a></div>
+      <div class="grid-cider"><a href="#cider">Cider</a></div>
+      <div class="grid-egyeb"><a href="#egyeb-szesz">Egyéb szesz</a></div>
+      <div class="grid-udito"><a href="#udito">Üdítő</a></div>
+    </div>
+    <div class="drink-list"></div>
+    <div class="list-names" id="sor">Csapolt sör</div>
+    <table>
+      <tr><td>Bitburger Dry Hop</td><td>0,5 l</td><td>1000 Ft</td></tr>
+      <tr><td>DAB</td><td>0,4 l</td><td>800 Ft</td></tr>
+      <tr><td>DAB pohár</td><td>0,25 l</td><td>500 Ft</td></tr>
+      <tr><td>Erdinger Csapolt</td><td>0,5 l</td><td>1000 Ft</td></tr>
+      <tr><td>Guinness</td><td>0,5 l</td><td>1500 Ft</td></tr>
+      <tr><td>Guinness pohár</td><td>0,25 l</td><td>800 Ft</td></tr>
+      <tr><td>Guinness Hop House</td><td>0,5 l</td><td>1300 Ft</td></tr>
+      <tr><td>Guinness Hop House pohár</td><td>0,25 l</td><td>700 Ft</td></tr>
+      <tr><td>Lindemans</td><td>0,5 l</td><td>1600 Ft</td></tr>
+      <tr><td>Lindemans pohár</td><td>0,25 l</td><td>800 Ft</td></tr>
+      <tr><td>Oharas</td><td>0,5 l</td><td>1300 Ft</td></tr>
+      <tr><td>Oharas pohár</td><td>0,25 l</td><td>700 Ft</td></tr>
+      <tr><td>Progusta Ipa</td><td>0,5 l</td><td>1500 Ft</td></tr>
+      <tr><td>Progusta Ipa pohár</td><td>0,25 l</td><td>800 Ft</td></tr>
+      <tr><td>Radeberger</td><td>0,4 l</td><td>800 Ft</td></tr>
+      <tr><td>Radeberger pohár</td><td>0,2 l</td><td>400 Ft</td></tr>
+    </table>
+    <div class="list-names">Üveges sör</div>
+    <table>
+      <tr><td>Erdinger mentes</td><td>0,5 l</td><td>800 Ft</td></tr>
+      <tr><td>Bitburger DRIVE</td><td>0,33 l</td><td>600 Ft</td></tr>
+      <tr><td>Bitburger</td><td>0,33 l</td><td>700 Ft</td></tr>
+      <tr><td>Clausthaler</td><td>0,33 l</td><td>600 Ft</td></tr>
+      <tr><td>Clausthaler Lemon</td><td>0,33 l</td><td>600 Ft</td></tr>
+      <tr><td>Erdinger Helles</td><td>0,5 l</td><td>900 Ft</td></tr>
+      <tr><td>Bernard Bohemian Ale</td><td>0,33 l</td><td>1100 Ft</td></tr>
+      <tr><td>Double Chocolate Stout</td><td>0,5 l</td><td>1300 Ft</td></tr>
+      <tr><td>Ginger Beard</td><td>0,5 l</td><td>1300 Ft</td></tr>
+    </table>
+    <div class="list-names" id="whiskey">Whiskey</div>
+    <table>
+      <tr><td>Aberlour 14</td><td>2 cl</td><td>1600 Ft</td></tr>
+      <tr><td>Aberlour Abunadh</td><td>2 cl</td><td>2200 Ft</td></tr>
+      <tr><td>Ardbeg 10</td><td>2 cl</td><td>1500 Ft</td></tr>
+      <tr><td>Ardbeg 5</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Ardbeg AN OA</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Arran Quarter Cask</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Arran Sherry Cask</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Ballantines</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ballantines 12</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Ballantines 17</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Ballantines Brasil</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ballantines Hard</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Balvenie 12</td><td>2 cl</td><td>1600 Ft</td></tr>
+      <tr><td>Balvenie 14</td><td>2 cl</td><td>1800 Ft</td></tr>
+      <tr><td>Benriach 10</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Benriach 10 Curiositas</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Benriach 16</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Benriach Peated</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Benromach Peat</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Black Grouse</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Bowmore 12</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Bulleit Rye</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Bushmills 10</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Caol Ila 12</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Chivas XV</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Chivas 21 ROYAL SOLUTE</td><td>2 cl</td><td>3000 Ft</td></tr>
+      <tr><td>Chivas EXTRA</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Chivas Mizunara</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Connemara</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Dewars 12</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Enso</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Evan Williams</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Famous Grouse</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Finlaggan</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Four Roses</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Four Roses Single B</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Four Roses Small B</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Fuyu</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Glen Elgin</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Glendronach 12</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Glendronach 14</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Glendronach Peated</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Glenfarclas 105</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Glenfiddich 12</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Glenfiddich 15</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Glenlivet 12</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Glenlivet 15</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Glenlivet 12 Illicit</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Glenlivet 12 Licensed</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Glenlivet 18</td><td>2 cl</td><td>2000 Ft</td></tr>
+      <tr><td>Glenlivet Captains</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Glenlivet Nadurra</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Glenlivet Nadurra Oloroso</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Glenlivet Nadurra Peated</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Glenmorangie</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Green Spot</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Hibiki</td><td>2 cl</td><td>2000 Ft</td></tr>
+      <tr><td>Highland Park</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jack D</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jack D Honey</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jack D Fire</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jack D Red Dog</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jack D Master 2</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jack D Master 3</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jack D Master 4</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jack D Master 5</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jack D Gold</td><td>2 cl</td><td>1600 Ft</td></tr>
+      <tr><td>Jack D Single B</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Jack D Gentleman</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Jameson</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jameson 18</td><td>2 cl</td><td>3200 Ft</td></tr>
+      <tr><td>Jameson Black</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Jameson Blenders Dog</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Jameson Cask Ipa</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jameson Cask Stout</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jameson Crested</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Jameson Destillers</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Jim B</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jim B Apple</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jim B Black</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jim B Choice</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jim B Devils</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jim B Double</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Jim B Red Stag</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jim B Signature</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Johnnie W Black</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Johnnie W Blue</td><td>2 cl</td><td>4000 Ft</td></tr>
+      <tr><td>Johnnie W Double Black</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Johnnie W Gold</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Johnnie W Green</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Johnnie W Platinum</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Johnnie W Red</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Johnnie W Rye</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Johnnie W Song of Fire</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Johnnie W Song of Ice</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Jura 12</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Jura 12 Elixir</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Jura Prophecy</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Kilbeggan</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Kilchoman Machir Bay</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Kilchoman Sanaig</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Lagavulin 10</td><td>2 cl</td><td>1600 Ft</td></tr>
+      <tr><td>Lagavulin 12</td><td>2 cl</td><td>3000 Ft</td></tr>
+      <tr><td>Lagavulin 16</td><td>2 cl</td><td>3000 Ft</td></tr>
+      <tr><td>Laphroaig 10</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Laphroaig 10 Sherry Cask</td><td>2 cl</td><td>4000 Ft</td></tr>
+      <tr><td>Laphroaig PX</td><td>2 cl</td><td>1600 Ft</td></tr>
+      <tr><td>Laphroaig Quarter Cask</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Laphroaig The 1815 Legacy</td><td>2 cl</td><td>2300 Ft</td></tr>
+      <tr><td>Ledaig 10</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Longmorn 10</td><td>2 cl</td><td>1500 Ft</td></tr>
+      <tr><td>Longmorn 15</td><td>2 cl</td><td>4000 Ft</td></tr>
+      <tr><td>Longmorn 16</td><td>2 cl</td><td>2000 Ft</td></tr>
+      <tr><td>Macallan 12</td><td>2 cl</td><td>2300 Ft</td></tr>
+      <tr><td>Maker's Mark</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Maker's Mark 46</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Method and Madness Hungarian Oak</td><td>2 cl</td><td>2500 Ft</td></tr>
+      <tr><td>Method and Madness French Oak</td><td>2 cl</td><td>2500 Ft</td></tr>
+      <tr><td>Monkey Shoulder</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Naked Grouse</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Nikka From The Barell</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Nikka Taketsuru</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Paddy</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Pike Creek</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Powers Gold</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Powers Three Swallow</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Proper Twelve</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Redbreast 12</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Redbreast Lustau Sherry</td><td>2 cl</td><td>1500 Ft</td></tr>
+      <tr><td>Scapa Glansa</td><td>2 cl</td><td>1600 Ft</td></tr>
+      <tr><td>Scarabus 10</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Silkie Legendary</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Silkie Legendary DARK</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Silkie Midnight</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Singleton 12</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Smooth Ambler</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Strathisla 12</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Talisker 10</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Teeling Single Grain</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Teeling Single Malt</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Teeling Small Batch</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>The Matsui Mizunara Cask</td><td>2 cl</td><td>2400 Ft</td></tr>
+      <tr><td>The Quiet Man</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Tomintoul 10</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Tullamore Dew</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Tyrconnell</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>W.Grants</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>W.Grants Signature</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Wild Turkey 101</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Writers Tears</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Yellow Spot</td><td>2 cl</td><td>2000 Ft</td></tr>
+    </table>
+    <div class="list-names" id="rum">Rum</div>
+    <table>
+      <tr><td>327 XO</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Abuelo XV Napoleon Cognac Finish</td><td>2 cl</td><td>1800 Ft</td></tr>
+      <tr><td>Bacardi 8</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Bacardi Gold</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Bacardi Oakheart</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Bacardi Premium Black</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Bacardi Razz</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Bacardi</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Brugal 1888</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Bumbu Original</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Bumbu XO</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Captain M Black</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Captain M Spice Gold</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Centenario 18</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Centenario 25</td><td>2 cl</td><td>1800 Ft</td></tr>
+      <tr><td>Centenario 9</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Centenario REAL</td><td>2 cl</td><td>3800 Ft</td></tr>
+      <tr><td>Dictador 20</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Dictador XO</td><td>2 cl</td><td>1800 Ft</td></tr>
+      <tr><td>Diplomatico Mantuano</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Diplomatico Reserva</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Don Papa</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Don Papa Baroko</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Don Papa Masskara</td><td>2 cl</td><td>1800 Ft</td></tr>
+      <tr><td>Equiano Original</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Havana 3</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Havana 7</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Havana Especial</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Havana Prof. A</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Havana Prof. B</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Havana Sel.de Maestros</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Kraken Black Spiced</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>La Hechicera</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Legendario 9</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Legendario Punch</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Matusalem 10</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Matusalem Extra Anejo</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Matusalem 15</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Matusalem 23</td><td>2 cl</td><td>1500 Ft</td></tr>
+      <tr><td>Matusalem Insolito</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Matusalem 7</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Plantation XO</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Quorhum 30</td><td>2 cl</td><td>1500 Ft</td></tr>
+      <tr><td>Remedy Spiced</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ron Millonario XO</td><td>2 cl</td><td>2200 Ft</td></tr>
+      <tr><td>Ron Varadero</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ron Varadero 7</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Rum Nation Barbados XO</td><td>2 cl</td><td>1600 Ft</td></tr>
+      <tr><td>Rum Nation Ceroni</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Rum Nation Guatemala XO</td><td>2 cl</td><td>1600 Ft</td></tr>
+      <tr><td>Rum Nation Jamaica Sherry</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Rum Nation Panama 18</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Rum Nation Peruano 8</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Sailor Jerry Spiced</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Spitz Original 80%</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Zacapa 23</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Zacapa XO</td><td>2 cl</td><td>3000 Ft</td></tr>
+    </table>
+    <div class="list-names" id="cognac">Cognac</div>
+    <table>
+      <tr><td>Ararat 5</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ararat 10</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Ararat Apricot</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Ararat Dvin</td><td>2 cl</td><td>2000 Ft</td></tr>
+      <tr><td>Ararat Nairi</td><td>2 cl</td><td>1500 Ft</td></tr>
+      <tr><td>Bardin VSOP</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Bardin XO</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Courvoisier VSOP</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Hennessy VS</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Hennessy Fine</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Hennessy VSOP</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Martell VSOP</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Marquis Armagnac</td><td>2 cl</td><td>1400 Ft</td></tr>
+      <tr><td>Otard VSOP</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Remy Martin VSOP</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>St. Remy VSOP</td><td>2 cl</td><td>600 Ft</td></tr>
+    </table>
+    <div class="list-names" id="gin">Gin</div>
+    <table>
+      <tr><td>Bombay</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Brockmans</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Brockmans Orange</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Bulldog</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Fekete</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ginmare</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Hendrick's</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Hyke</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Malfy Rosa</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Martin Miller's</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Martin Miller's strength</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Millicent</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Monkey 47</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Plymouth</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Plymouth Sloe</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Roku</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Sevenhills</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Stin</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Stin Overproff</td><td>2 cl</td><td>1300 Ft</td></tr>
+      <tr><td>Tanqueray</td><td>2 cl</td><td>900 Ft</td></tr>
+    </table>
+    <div class="list-names" id="vodka">Vodka</div>
+    <table>
+      <tr><td>Absolut</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Absolut Elyx</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Absolut Peppar</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Belvedere</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Bols</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ciroc</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Danzka</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Finlandia</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Grey Goose</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Imperia Russian</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Kremlin</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Nemiroff Honey Pepper</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Nemiroff Original</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Smirnoff Black</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Smirnoff Red</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Theree Sixty</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Vilmos</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Zubrowka Bison Grass</td><td>2 cl</td><td>600 Ft</td></tr>
+    </table>
+    <div class="list-names" id="metaxa">Metaxa</div>
+    <table>
+      <tr><td>Christian Drouin Calvados XO</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Metaxa 5</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Metaxa 7</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Metaxa 12</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Metaxa Grand Fine porcelán</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Metaxa Privat Reserve</td><td>2 cl</td><td>1500 Ft</td></tr>
+    </table>
+    <div class="list-names" id="palinka">Pálinka</div>
+    <table>
+      <tr><td>Agárdi Piros Vilmoskörte</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Árpád Birs</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Békési Szőlő</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Bestillo Gönci Barack</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Bestillo Szilva</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Gusto M.Á. Alma</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Gusto M.Á. Birs</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Gusto M.Á. Körte</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Gusto M.Á. Szilva</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Gusto M.Á. Szőlő</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Gusto 41 Ágyas Cserszegi</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gusto 41 Ágyas Vilmoskörte</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gusto 41 Alma</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gusto 41 Cserszegi</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gusto 41 Barack</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gusto 41 Málna</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gusto 47 Alma</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gusto 47 Irsai</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gusto 47 Vilmoskörte</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gusto 57 Cserszegi</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Gyulai Ágyas Cigánymeggy</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Gyulai Birs</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Gyulai Cigánymeggy</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Gyulai 60 vilmoskörte</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Magna 63 Alma</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Magna 63 Birs</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Magna 50 Mák</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Magna 63 Meggy</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Márton és L. Gold Irsai</td><td>2 cl</td><td>1000 Ft</td></tr>
+      <tr><td>Márton és L. Kökény</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Márton és L. Vilmoskörte</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Panyolai Aranyalma</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Panyolai Aranykörte</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Panyolai Aranyszőlő</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Rézangyal 33 M.Á. Meggy</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Rézangyal 40 Ágyas Málna</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Rézangyal 40 Ágyas Vilmoskörte</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Rézangyal 40 Feketecseresznye</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Rézangyal 40 Kajszbarack</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Rézangyal 42 Érlelt Alma</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Rézangyal 42 Törköly</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Rézangyal 45 Szilva</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Rézangyal 45 Irsai</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Rézangyal 55 Kajszibarack</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Rézangyal 55 Meggy</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Suhancos 30 Mézes Barack</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Suhancos 30 Mézes Bodza</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Suhancos 30 Mézes Málna</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Suhancos 30 Mézes Szamóca</td><td>2 cl</td><td>600 Ft</td></tr>
+    </table>
+    <div class="list-names" id="keseru">Keserű</div>
+    <table>
+      <tr><td>Jagermeister</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Unicum</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Unicum Barista</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Unicum Riserva</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Unicum Szilva</td><td>2 cl</td><td>600 Ft</td></tr>
+    </table>
+    <div class="list-names" id="tequila">Tequila</div>
+    <table>
+      <tr><td>Agavero Licor</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Avion Raposado</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Brockmans Agave Cut</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>El Jimador Raposado</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>El Jimador Silver</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Olmeca Dark</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Olmeca Gold</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Patron Raposado</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Patron Silver</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Sauza Tres Raposado</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Sierra M. Anejo</td><td>2 cl</td><td>1200 Ft</td></tr>
+      <tr><td>Sierra M. Raposado</td><td>2 cl</td><td>900 Ft</td></tr>
+      <tr><td>Vivir Blanco</td><td>2 cl</td><td>1100 Ft</td></tr>
+      <tr><td>Vivir Raposado</td><td>2 cl</td><td>1100 Ft</td></tr>
+    </table>
+    <div class="list-names" id="likor">Likőr</div>
+    <table>
+      <tr><td>Agárdi Meggylikőr</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Angeli Cioccolato</td><td>0,1 l</td><td>900 Ft</td></tr>
+      <tr><td>Angeli Tiramisu</td><td>0,1 l</td><td>900 Ft</td></tr>
+      <tr><td>Angeli Whisky</td><td>0,1 l</td><td>900 Ft</td></tr>
+      <tr><td>Aperitiamo</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Aperol</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Baileys</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Becherovka</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Becherovka Lemond</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Bols Blue Curacao</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Campari</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Centenario KÁVÉ</td><td>0,1 l</td><td>1700 Ft</td></tr>
+      <tr><td>Cinzano Rosso</td><td>0,1 l</td><td>800 Ft</td></tr>
+      <tr><td>Cointreau (narancs)</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>De Kuyper Cherry</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>De Kuyper Blueberry</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Frangelico (mogyoró)</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Galliano (vanilla)</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Garrone Cherry</td><td>0,1 l</td><td>600 Ft</td></tr>
+      <tr><td>Kahlua (KÁVÉ)</td><td>0,1 l</td><td>1700 Ft</td></tr>
+      <tr><td>Licor 43</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Magna 30 Mák</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Magna 25 Fahéjas Szilva</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Malibu</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Martini Bianco</td><td>0,1 l</td><td>800 Ft</td></tr>
+      <tr><td>Martini Extra Dry</td><td>0,1 l</td><td>800 Ft</td></tr>
+      <tr><td>Martini Rosato</td><td>0,1 l</td><td>800 Ft</td></tr>
+      <tr><td>Márton és L. Mézes Ágyas Áfonya</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Márton és L. Mézes Ágyas Cigánymeggy</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Márton és L. Mézes Ágyas Dió</td><td>2 cl</td><td>700 Ft</td></tr>
+      <tr><td>Nemiroff Cranberry</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Pampelle</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Sambuca</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Shanky's Whiskey</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Southern Comfort</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Tubi 60 Original</td><td>2 cl</td><td>800 Ft</td></tr>
+    </table>
+    <div class="list-names" id="bor">Bor</div>
+    <table>
+      <tr><td>Frittman Rose dl</td><td>0,1 l</td><td>600 Ft</td></tr>
+      <tr><td>Frittman Rose 750ml</td><td>0,75 l</td><td>2900 Ft</td></tr>
+      <tr><td>Gere Portugieser</td><td>0,75 l</td><td>3500 Ft</td></tr>
+      <tr><td>Heimann BARBÁR</td><td>0,75 l</td><td>14000 Ft</td></tr>
+      <tr><td>Heimann SXRD cuveé</td><td>0,75 l</td><td>4000 Ft</td></tr>
+      <tr><td>Mád furmint</td><td>0,75 l</td><td>3800 Ft</td></tr>
+      <tr><td>Mád hárslevelű</td><td>0,75 l</td><td>4000 Ft</td></tr>
+      <tr><td>Mád nyúlászó</td><td>0,75 l</td><td>6000 Ft</td></tr>
+      <tr><td>Mád sweet by Tokaj</td><td>0,375 l</td><td>4000 Ft</td></tr>
+      <tr><td>Mád szamorodni</td><td>0,5 l</td><td>12000 Ft</td></tr>
+      <tr><td>Nyakas dl</td><td>0,1 l</td><td>600 Ft</td></tr>
+      <tr><td>Nyakas Irsai 750ml</td><td>0,75 l</td><td>3300 Ft</td></tr>
+      <tr><td>Thummerer tréfli vörös</td><td>0,75 l</td><td>4000 Ft</td></tr>
+    </table>
+    <div class="list-names" id="pezsgo">Pezsgő</div>
+    <table>
+      <tr><td>Hungaria 0,2L Extra Dry</td><td>0,2 l</td><td>1200 Ft</td></tr>
+      <tr><td>Soligo Extra Dry</td><td>0,75 l</td><td>6000 Ft</td></tr>
+    </table>
+    <div class="list-names" id="cider">Cider</div>
+    <table>
+      <tr><td>Smirnoff ICE</td><td>0,275 l</td><td>600 Ft</td></tr>
+      <tr><td>Somersby Apple</td><td>0,33 l</td><td>600 Ft</td></tr>
+      <tr><td>Somersby Blueberry</td><td>0,33 l</td><td>600 Ft</td></tr>
+    </table>
+    <div class="list-names" id="egyeb-szesz">Egyéb szesz</div>
+    <table>
+      <tr><td>Absinthe 80 Black</td><td>2 cl</td><td>800 Ft</td></tr>
+      <tr><td>Grappa</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ypioca Cachaca 150</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ypioca Cachaca ouro</td><td>2 cl</td><td>600 Ft</td></tr>
+      <tr><td>Ypioca Cachaca Prata</td><td>2 cl</td><td>600 Ft</td></tr>
+    </table>
+    <div class="list-names" id="udito">Üdítő</div>
+    <table>
+      <tr><td>Szóda</td><td>1 db</td><td>300 Ft</td></tr>
+      <tr><td>Naturaqua Dús</td><td>0,33 l</td><td>500 Ft</td></tr>
+      <tr><td>Naturaqua Mentes</td><td>0,33 l</td><td>500 Ft</td></tr>
+      <tr><td>Cappy</td><td>0,25 l</td><td>600 Ft</td></tr>
+      <tr><td>Fuze Tea Citrom</td><td>0,25 l</td><td>600 Ft</td></tr>
+      <tr><td>Fuze Tea Barack</td><td>0,25 l</td><td>600 Ft</td></tr>
+      <tr><td>Cola,Fanta,Sprite,Kinley</td><td>0,25 l</td><td>600 Ft</td></tr>
+      <tr><td>Double Dutch Ginger B</td><td>0,2 l</td><td>1000 Ft</td></tr>
+      <tr><td>Double Dutch Tonic</td><td>0,2 l</td><td>1000 Ft</td></tr>
+      <tr><td>Double Dutch Tonic Cranberry</td><td>0,2 l</td><td>1000 Ft</td></tr>
+      <tr><td>Double Dutch Tonic Cucumber</td><td>0,2 l</td><td>1000 Ft</td></tr>
+      <tr><td>Hell</td><td>0,25 l</td><td>500 Ft</td></tr>
+      <tr><td>Red Bull</td><td>0,25 l</td><td>1000 Ft</td></tr>
+    </table>
+    <div class="contacts"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <p><small>Made with love in Gyula ©2024 | Powered by Notrinoss</small></p>
+    </div>
+  </footer>
+</body>
+</html>

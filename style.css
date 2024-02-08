@@ -1,0 +1,233 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* VARIABLES */
+
+:root {
+  --white: rgb(242, 242, 242);
+  --black: rgb(4, 3, 3);
+  --gray: rgb(128, 128, 128);
+  --darkmaroon: rgb(86, 28, 36);
+  --maroon: rgb(109, 41, 50);
+  --barkbeige: rgb(199, 183, 163);
+  --beige: rgb(232, 216, 196);
+}
+
+
+
+
+/* GENERAL STYLE */
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+
+body {
+  font-family: 'Amatic SC', sans-serif;
+  font-family: 'Teko', sans-serif;
+  background-color: var(--darkmaroon);
+}
+
+/* BUTTON STYLE */
+
+#toTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--darkmaroon); /* Set a background color */
+  color: var(--beige); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  box-shadow: 5px 5px 5px black; /* Add some shadow */
+}
+
+#toTop:hover {
+  background-color: var(--maroon); /* Add a maroon background on hover */
+}
+
+
+
+
+
+/* HEADER STYLES */
+
+.main-header {
+  height: 20vh;
+  width: 100%;
+  background-color: var(--darkmaroon);
+}
+
+.header-logo {
+  height: 20vh;
+  aspect-ratio: 1/1;
+  margin: auto;
+}
+
+.logo {
+  object-fit: cover;
+  height: inherit;
+}
+
+
+
+
+/* DRINK LINKS */
+
+.drink-links {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-flow: row;
+  row-gap: 0.5rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0rem;
+  background-color: var(--darkmaroon);
+}
+
+.drink-links > div {
+  width: 23vw;
+  text-align: center;
+  margin: auto;
+  font-size: 1.3rem;
+  background-color: var(--barkbeige);
+  border-radius: 1.5rem;
+}
+
+a {
+  color: var(--darkmaroon);
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+
+
+
+
+/* MAIN */
+
+main {
+  background-color: var(--darkmaroon);
+}
+
+
+
+
+
+
+/* DRINK LIST */
+
+table {
+  width: 90vw;
+  margin: auto;
+  font-size: 1rem;
+  color: var(--beige);
+  margin-bottom: 1rem;
+}
+
+tr >td:nth-child(n+2) {
+  width: 10vw;
+  text-align: right;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--maroon);
+}
+
+.list-names {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--beige);
+  margin-bottom: 1rem;
+}
+
+
+/* FOOTER STYLES */
+
+.footer {
+  height: 5vh;
+  width: 100%;
+  background-color: var(--darkmaroon);
+  color: var(--barkbeige);
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
